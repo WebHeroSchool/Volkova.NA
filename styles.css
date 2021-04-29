@@ -1,9 +1,9 @@
-.title{
+title{
   font-family: roboto;
 }
-.nav{
-  font-family: roboto;
+nav{
+  font-family: roboto,sans-serif;
 }
-.p{
-  font-family: roboto;
+p{
+  font-family: roboto,sans-serif;
 }
