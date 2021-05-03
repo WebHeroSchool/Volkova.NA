@@ -1,9 +1,38 @@
 .main-content__title{
   font-family: 'Roboto';
 }
-nav{
+.menu{
   font-family: 'Roboto',sans-serif;
 }
-p{
+.main-content__description{
   font-family: 'Roboto',sans-serif;
+}
+
+body{
+  margin:0;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+}
+.wrapper{
+  margin:auto;
+  width:80%;
+}
+.logo,.menu{
+  display:inline-block;
+}
+.logo{
+  margin-right:57%;
+  padding:40px 0;
+}
+.menu{
+  display: flex;
+  align-items:center;
+}
+.menu__item{
+  padding:0 13px;
+}
+.menu__item:last-child{
+  padding-right:0px;
 }
