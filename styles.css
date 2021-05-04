@@ -10,3 +10,31 @@
 .main-content__button{
   font-family: 'Roboto',sans-serif;
 }
+body{
+  margin:0;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+}
+.wrapper{
+  margin:auto;
+  width:80%;
+}
+.logo,.menu{
+  display:inline-block;
+}
+.logo{
+  margin-right:57%;
+  padding:40px 0;
+}
+.menu{
+  display: flex;
+  align-items:center;
+}
+.menu__item{
+  padding:0 13px;
+}
+.menu__item:last-child{
+  padding-right:0px;
+}
