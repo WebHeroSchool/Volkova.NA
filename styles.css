@@ -42,14 +42,14 @@ body{
   opacity: .7;
 }
 .menu{
-  font-family:robotoregular,Arial,Helvetica,Sans-serif;
+  font-family:"Roboto",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
 }
 .menu__item{
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px robotoregular,Arial,Helvetica,Sans-serif;
+  font: 500 18px/21px "Roboto",Arial,Helvetica,Sans-serif;
   color:#000;
   text-decoration: none;
   transition: opacity 0.5s;
