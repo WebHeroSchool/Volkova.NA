@@ -40,7 +40,7 @@ body{
   opacity: .7;
 }
 .menu{
-  font:500 18px/21px Roboto;
+  font:500 18px/21px 'robotobold',Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
 }
