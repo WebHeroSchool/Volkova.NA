@@ -46,14 +46,24 @@ body{
 }
 .menu__item{
   position: relative;
-  margin-right: 23px;
+  /*margin-right: 23px;*/
   font: 500 18px/21px "robotomedium",Arial,Helvetica,Sans-serif;
   color:#000;
   text-decoration: none;
   transition: opacity 0.5s;
 }
+.menu__item_services{
+  margin-left: 25px;
+}
+.menu__item_about{
+  margin-left:24px;
+}
+.menu__item_blog{
+  margin-left:30px;
+}
 .menu__item:last-child{
-  padding-right:0px;
+  padding-right:7px;
+  margin-left: 29px;
 }
 .menu__item_active:after{
   display: block;
@@ -95,7 +105,6 @@ body{
   background: url(img/mainImg.svg);
   background-repeat: no-repeat;
   background-position: top right;
-  border:dashed 1px red;
 }
 .main__title{
   margin:0 0 34px 0;
@@ -104,19 +113,18 @@ body{
   color:#000;
 }
 .main__title-text_highlight{
-background: #ECF3FF;
+  background: #ECF3FF;
 }
 .main__subtitle{
  margin: 0 0 41px 0;
  padding: 0px 30% 0 0;
  font: 400 22px/26px "robotoregular",Arial,Helvetica,Sans-serif;
  color:#000;
- border: dashed 1px red;
 }
 .main__button{
   display: inline-block;
  font: 500 18px/21px "robotomedium",Arial,Helvetica,Sans-serif;
- padding: 14px 34px 14px 24px;
+ padding: 15px 32px 17px 24px;
  margin-left: 3px;
  color: #FFF;
  background: #0056EC;
