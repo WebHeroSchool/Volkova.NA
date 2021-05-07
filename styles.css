@@ -101,10 +101,11 @@ body{
   width: 100%;
 }
 .main{
-  padding: 0px 57% 200px 0;
+  padding: 0 57% 100px 0;
   background: url(img/mainImg.svg);
   background-repeat: no-repeat;
   background-position: top right;
+  margin-right: 4px;
 }
 .main__title{
   margin:0 0 34px 0;
