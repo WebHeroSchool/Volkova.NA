@@ -18,7 +18,6 @@ body{
   padding: 40px 0;
   padding-left: 45px;
   position: relative;
-  margin-right: 62%;
 }
 .logo__circle{
   width: 28px;
@@ -45,33 +44,32 @@ body{
 opacity: 0;
 }
 .menu__box {
-  display: none;
-  border:dashed 1px red;
+display: none;
 }
 .menu{
   font-family:"Roboto",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
-  border:  dashed 1px red;
 }
 .menu__item{
   position: relative;
-  font: 500 18px/21px "robotomedium",Arial,Helvetica,Sans-serif;
+  font: 500 18px/21px "Roboto",Arial,Helvetica,Sans-serif;
   color:#000;
   text-decoration: none;
   transition: opacity 0.5s;
+  padding-right: 0px;
 }
 .menu__item_services{
-  margin-left: 25px;
+  margin-left: 23px;
 }
 .menu__item_about{
-  margin-left:24px;
+  margin-left:23px;
 }
 .menu__item_blog{
-  margin-left:30px;
+  margin-left:26px;
 }
 .menu__item:last-child{
-  padding-right:20px;
+  padding-right:10px;
   margin-left: 29px;
 }
 .menu__item_active:after{
@@ -146,38 +144,57 @@ opacity: 0;
   opacity: .5;
 }
 @media(max-width:1366px){
-  .logo{
-    padding: 20px 0;
-    padding-left: 44px;
+  .wrapper{
+    margin:auto;
+    width:68%;
   }
-  .header{
-    margin-bottom: 40px;
+ .header{
+    margin-bottom: 87px;
+  }
+  .menu__item{
+    padding-top: 5px;
+    font: 500 14px/16px "Roboto",Arial,Helvetica,Sans-serif;
+  }
+  .menu__item:last-child{
+    padding-right:0px;
   }
   .main{
     background-size: contain;
     padding-bottom: 80px;
+    background-size: 54%;
   }
   .main__title{
-    font: 700 55px/66px 'pt_serifbold',Arial,Helvetica,Sans-serif;
+    font: 700 50px/66px 'pt_serifbold',Arial,Helvetica,Sans-serif;
+    padding-top: 15px;
+    margin-bottom: 38px;
   }
   .main__subtitle{
     font: 500 18px/21px "robotoregular",Arial,Helvetica,Sans-serif;
-  }
+    padding-right: 20px;
+    margin-bottom: 40px;
+ }
   .main__button{
-    font: 500 14px/16px "robotomedium",Arial,Helvetica,Sans-serif;
-  }
-}
+  font: 500 14px/16px "robotomedium",Arial,Helvetica,Sans-serif;
+  padding-right: 20px;
+  padding-left: 15px;
+ }
 @media(max-width:1024px){
   .wrapper{
     margin:auto;
-    width:90%;
+    width:91%;
   }
   .header{
-    margin-bottom: 100px;
+    margin-bottom: 87px;
+  }
+  .menu__item:last-child{
+    margin-left: 27px;
+  }
+  .menu__item_blog{
+    margin-left:25px;
   }
   .main{
-    background-size: 54%;
-    padding-top: 0;
+    background-size: 55%;
+    padding-top: 13px;
     padding-bottom: 50px;
   }
   .main__title{
@@ -187,41 +204,48 @@ opacity: 0;
   }
   .main__subtitle{
   font: 500 18px/21px "roboto",Arial,Helvetica,Sans-serif;
-  padding-right: 0;
+  padding-right: 10px;
+ }
+ .main__button{
+   padding-right: 25px;
  }
 }
 @media(max-width:768px) {
   .wrapper{
     margin:auto;
-    width:80%;
+    width:87%;
   }
   .logo{
    font-size:0;
+   padding-top: 5px;
   }
   .header{
-    margin-bottom: 38px;
+    margin-bottom: 10px;
   }
   .menu{
     display:none;
   }
   .main{
     background-position: top center;
-    background-size: 70%;
-    padding:60% 0 0;
+    background-size: 87%;
+    padding:80% 0 0 7px;
     text-align: center;
   }
   .main__title{
     font: 700 30px/40px 'pt_serifbold',Arial,Helvetica,Sans-serif;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
   .main__subtitle{
     font: 500 16px/19px "robotomedium",Arial,Helvetica,Sans-serif;
-    margin-bottom: 25px;
-    padding: 0 20px;
+    margin-bottom: 23px;
+    padding: 0 38px 0 34px;
   }
   .main__button{
     font: 500 14px/16px "robotomedium",Arial,Helvetica,Sans-serif;
+    padding-top: 14px;
+    padding-bottom: 13px;
   }
+
   /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
@@ -231,7 +255,7 @@ opacity: 0;
   display: flex; /* используем flex для центрирования содержимого */
   align-items: center;  /* центрируем содержимое кнопки */
   position: fixed;
-  top: 30px;
+  top: 28px;
   right:24px;
   width: 26px;
   height: 26px;
@@ -265,14 +289,15 @@ opacity: 0;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 186px 0;
+  padding: 175px 0;
   text-align: center;
   background-color: #FFF;
 }
 /* элементы меню */
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 12px 0;
+  margin-right: 25px;
   color: #000;
   font: 500 30px/35px "robotomedium",Arial,Helvetica,Sans-serif;
 }
