@@ -10,7 +10,7 @@ body{
   justify-content: space-between;
   margin-bottom: 133px;
 }
- .logo,.menu{
+ .logo,.menu__box{
   display:inline-block;
 }
 .logo{
@@ -44,7 +44,7 @@ body{
   opacity: 0;
  }
 
-.menu{
+.menu__box{
   font-family:"Roboto",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
@@ -142,6 +142,14 @@ body{
 .main__button:hover{
   opacity: .5;
 }
+@media (max-width:1524px) {
+  .main{
+    background-size: 58%;
+  }
+  .main__title{
+    font: 800 66px/87px 'pt_serifbold',Arial,Helvetica,Sans-serif;
+  }
+}
 @media(max-width:1440px){
   .main{
     background-size: 60%;
@@ -200,7 +208,7 @@ body{
    .main__title{
      font: 600 50px/66px 'pt_serifbold',Arial,Helvetica,Sans-serif;
  }
- .main__subtitle{
+   .main__subtitle{
    font: 400 18px/21px "robotoregular",Arial,Helvetica,Sans-serif;
  }
 }
@@ -215,7 +223,6 @@ body{
    .menu__item:last-child{
     margin-right: 0px;
    }
-
  }
 @media(max-width:1024px){
   .wrapper{
@@ -230,6 +237,12 @@ body{
     margin-right: -9px;
   }
   .menu__item_blog{
+    margin-left:27px;
+  }
+  .menu__item_about{
+    margin-left:26px;
+  }
+  .menu__item_services{
     margin-left:24px;
   }
   .main{
@@ -245,9 +258,12 @@ body{
   .main__subtitle{
   font: 500 18px/21px "roboto",Arial,Helvetica,Sans-serif;
   padding-right: 10px;
+  margin-bottom: 43px;
  }
  .main__button{
    padding-right: 25px;
+   padding-top: 15px;
+   padding-bottom: 13px;
  }
 }
 @media(max-width:768px) {
@@ -260,7 +276,7 @@ body{
    padding-top: 5px;
   }
   .header{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .main{
     background-position: top center;
@@ -282,8 +298,8 @@ body{
     padding-top: 14px;
     padding-bottom: 13px;
     padding-left:15px;
-    padding-right: 26px;
-    margin-right: 4px;
+    padding-right: 28px;
+    margin-right: 6px;
   }
 
 
@@ -298,7 +314,7 @@ body{
     position: fixed;
     top: 28px;
     right:24px;
-    width: 26px;
+    width: 25px;
     height: 26px;
     cursor: pointer;
     z-index: 1;
@@ -315,11 +331,11 @@ body{
   }
   .menu__btn > span::before {
     content: '';
-    top: -8px;
+    top: -7px;
   }
   .menu__btn > span::after {
     content: '';
-    top: 8px;
+    top: 7px;
   }
   /* контейнер меню */
   .menu__box{
@@ -348,7 +364,22 @@ body{
   .menu__item:last-child{
     margin-left: 0;
     padding-left: 0;
+    padding-right: 14px;
   }
+   .menu__item_blog{
+     padding-right: 27px;
+   }
+    .menu__item_about{
+      padding-right: 27px;
+      margin-bottom: 1px;
+    }
+    .menu__item_services{
+      margin-bottom: 3px;
+    }
+   .menu__item_active::after{
+     display: none;
+   }
+
 
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
