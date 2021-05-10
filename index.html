@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Мой первый сайт </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -16,13 +17,26 @@
       <div class="logo__circle logo__circle_color_blue"></div>
       app.creation
     </div>
-     <nav class="menu">
-       <a class="menu__item menu__item_start" href="#">start</a>
-       <a class="menu__item menu__item_services menu__item_active" href="#">services</a>
-       <a class="menu__item menu__item_about" href="#">about</a>
-       <a class="menu__item menu__item_blog" href="#">blog</a>
-       <a class="menu__item menu__item_contact" href="#">contact us</a>
-      </nav>
+    <div class="hamburger-menu">
+     <input id="menu__toggle" type="checkbox" />
+     <label class="menu__btn" for="menu__toggle">
+      <span></span>
+     </label>
+     <nav class="menu menu__box">
+      <a class="menu__item menu__item_start" href="#">start</a>
+      <a class="menu__item menu__item_services menu__item_active" href="#">services</a>
+      <a class="menu__item menu__item_about" href="#">about</a>
+      <a class="menu__item menu__item_blog" href="#">blog </a>
+      <a class="menu__item menu__item_contact" href="#">contact us</a>
+    </nav>
+    <!--<nav class="menu__box">
+     <a class=" menu__item_start" href="#">start</a>
+     <a class=" menu__item_services menu__item_active" href="#">services</a>
+     <a class=" menu__item_about" href="#">about</a>
+     <a class=" menu__item_blog" href="#">blog </a>
+     <a class=" menu__item_contact" href="#">contact us</a>
+   </nav>-->
+  </div>
   </header>
   <section class="main">
       <h1 class="main__title">Building an App <span class="main__title-text_highlight">Without Design Expertise?</span></h1>
