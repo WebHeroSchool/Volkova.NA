@@ -44,7 +44,7 @@ body{
   opacity: 0;
  }
 
-.menu__box{
+.menu{
   font-family:"Roboto",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
