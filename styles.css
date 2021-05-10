@@ -137,10 +137,6 @@ body{
  background: #0056EC;
  text-decoration: none;
  border-radius: 4px;
- transition: opacity .5s;
-}
-.main__button:hover{
-  opacity: .5;
 }
 @media (max-width:1524px) {
   .main{
