@@ -39,16 +39,14 @@ body{
   border-radius: 50%;
   opacity: .7;
 }
-/* скрываем чекбокс */
  #menu__toggle {
   opacity: 0;
  }
-
-.menu{
+.menu__box{
   font-family:"Roboto",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .menu__item{
   position: relative;
@@ -137,19 +135,17 @@ body{
  background: #0056EC;
  text-decoration: none;
  border-radius: 4px;
- border: 4px solid #acafb7;
+ border: 4px solid #C8DBFB;
  animation: radial-pulse 3s infinite;
 }
 @keyframes radial-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(23, 22, 22, 0.5);
+    box-shadow: 0 0 0 0px #C8DBFB;
   }
-
   100% {
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 15px #C8DBFB;
   }
 }
-
 @media (max-width:1524px) {
   .main{
     background-size: 58%;
@@ -181,14 +177,16 @@ body{
     margin-right: 45%;
   }
   .menu__item{
-    padding-top: 5px;
+    padding-top: 3px;
     font: 500 14px/16px "Roboto",Arial,Helvetica,Sans-serif;
+  }
+  .menu__item_services{
+    margin-left: 25px;
   }
   .menu__item:last-child{
    margin-right: -8px;
   }
   .main{
-    background-size: contain;
     padding-bottom: 80px;
     background-size: 55%;
     margin-right: 0;
@@ -266,14 +264,12 @@ body{
   .main__subtitle{
   font: 500 18px/21px "roboto",Arial,Helvetica,Sans-serif;
   padding-right: 10px;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
  }
  .main__button{
-   padding-right: 25px;
-   padding-top: 15px;
-   padding-bottom: 13px;
+  padding: 15px 25px 14px 12px;
+  margin-left: 0;
  }
-}
 @media(max-width:768px) {
   .wrapper{
     margin:auto;
@@ -298,27 +294,20 @@ body{
   }
   .main__subtitle{
     font: 500 16px/19px "robotomedium",Arial,Helvetica,Sans-serif;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     padding: 0 35px 0 34px;
   }
   .main__button{
     font: 500 14px/16px "robotomedium",Arial,Helvetica,Sans-serif;
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left:15px;
-    padding-right: 28px;
+    padding: 14px 28px 13px 15px;
     margin-right: 6px;
   }
-
-
-  /* скрываем чекбокс */
   #menu__toggle {
     opacity: 0;
   }
-  /* стилизуем кнопку */
   .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 28px;
     right:24px;
@@ -327,7 +316,6 @@ body{
     cursor: pointer;
     z-index: 1;
   }
-  /* добавляем "гамбургер" */
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -345,7 +333,6 @@ body{
     content: '';
     top: 7px;
   }
-  /* контейнер меню */
   .menu__box{
     display: flex;
     flex-direction:column;
@@ -359,9 +346,7 @@ body{
     list-style: none;
     text-align: center;
     background-color: #FFF;
-    /*box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);*/
   }
-  /* элементы меню */
   .menu__item {
     display: block;
     padding: 12px 24px;
@@ -387,8 +372,6 @@ body{
    .menu__item_active::after{
      display: none;
    }
-
-
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -404,13 +387,11 @@ body{
     visibility: visible;
     left: 0;
   }
-
   @keyframes radial-pulse {
     0% {
-      box-shadow: 0 0 0 0px rgba(23, 22, 22, 0.5);
+      box-shadow: 0 0 0 0px #C8DBFB;
     }
-
     100% {
-      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      box-shadow: 0 0 0 10px #C8DBFB;
     }
   }
