@@ -387,12 +387,12 @@ body{
     visibility: visible;
     left: 0;
   }
-   @keyframes radial-pulse {
-    0% {
+   @keyframes radial-pulse{
+    0%{
       box-shadow: 0 0 0 0px #C8DBFB;
     }
-    100% {
+    100%{
       box-shadow: 0 0 0 10px #C8DBFB;
     }
   }
-}
+ }
