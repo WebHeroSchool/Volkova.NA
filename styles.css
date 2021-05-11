@@ -14,7 +14,7 @@ body{
   display:inline-block;
 }
 .logo{
-  font:bold 24px/32px pt_serifbold,Arial,Helvetica,Sans-serif;
+  font:bold 24px/32px "pt_serifbold",Arial,Helvetica,Sans-serif;
   padding: 40px 0;
   padding-left: 45px;
   position: relative;
@@ -43,14 +43,14 @@ body{
   opacity: 0;
  }
 .menu__box{
-  font-family:"Roboto",Arial,Helvetica,Sans-serif;
+  font-family:"robotomedium",Arial,Helvetica,Sans-serif;
   display: flex;
   align-items:center;
   margin-top: 30px;
 }
 .menu__item{
   position: relative;
-  font: 500 18px/21px "Roboto",Arial,Helvetica,Sans-serif;
+  font: 500 18px/21px "robotomedium",Arial,Helvetica,Sans-serif;
   color:#000;
   text-decoration: none;
   transition: opacity 0.5s;
@@ -178,7 +178,7 @@ body{
   }
   .menu__item{
     padding-top: 3px;
-    font: 500 14px/16px "Roboto",Arial,Helvetica,Sans-serif;
+    font: 500 14px/16px "robotomedium",Arial,Helvetica,Sans-serif;
   }
   .menu__item_services{
     margin-left: 25px;
@@ -215,7 +215,7 @@ body{
      font: 600 50px/66px 'pt_serifbold',Arial,Helvetica,Sans-serif;
  }
    .main__subtitle{
-   font: 400 18px/21px "robotoregular",Arial,Helvetica,Sans-serif;
+    font: 400 18px/21px "robotoregular",Arial,Helvetica,Sans-serif;
  }
 }
  @media(max-width:1152px){
@@ -227,7 +227,7 @@ body{
      margin-right: 25%;
    }
    .menu__item:last-child{
-    margin-right: 0px;
+     margin-right: 0px;
    }
  }
 @media(max-width:1024px){
@@ -262,13 +262,13 @@ body{
     padding-right: 1px;
   }
   .main__subtitle{
-  font: 500 18px/21px "roboto",Arial,Helvetica,Sans-serif;
-  padding-right: 10px;
-  margin-bottom: 39px;
- }
- .main__button{
-  padding: 15px 25px 14px 12px;
-  margin-left: 0;
+    font: 500 18px/21px "robotomedium",Arial,Helvetica,Sans-serif;
+    padding-right: 10px;
+    margin-bottom: 39px;
+  }
+  .main__button{
+    padding: 15px 25px 14px 12px;
+    margin-left: 0;
  }
 @media(max-width:768px) {
   .wrapper{
@@ -360,14 +360,14 @@ body{
     padding-right: 14px;
   }
    .menu__item_blog{
-     padding-right: 27px;
+    padding-right: 27px;
    }
     .menu__item_about{
-      padding-right: 27px;
-      margin-bottom: 1px;
-    }
-    .menu__item_services{
-      margin-bottom: 3px;
+    padding-right: 27px;
+    margin-bottom: 1px;
+  }
+   .menu__item_services{
+     margin-bottom: 3px;
     }
    .menu__item_active::after{
      display: none;
