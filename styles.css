@@ -10,7 +10,8 @@ body {
   justify-content: space-between;
   margin-bottom: 133px;
 }
- .logo,.menu__box {
+.logo,
+.menu__box {
   display: inline-block;
 }
 .logo {
@@ -71,7 +72,7 @@ body {
   padding-right:10px;
   margin-left: 29px;
 }
-.menu__item_active:after {
+.menu__item_active::after {
   display: block;
   content: '';
   position: absolute;
@@ -79,7 +80,7 @@ body {
   height: 3px;
   background:#0056EC;
 }
-.menu__item:after {
+.menu__item::after {
   display: block;
   content: '';
   position: absolute;
@@ -93,7 +94,7 @@ body {
 .menu__item:hover {
   opacity: 0.5;
 }
- .menu__item:hover:after {
+.menu__item:hover::after {
   position: absolute;
   left:0;
   display: block;
@@ -102,7 +103,8 @@ body {
   height: 3px;
   background: #0056EC;
 }
-.menu__item:hover:after,.menu__item_active:after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
