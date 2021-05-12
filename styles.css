@@ -174,7 +174,7 @@ body {
     margin: auto;
     width: 68%;
   }
- .header {
+  .header {
     margin-bottom: 85px;
   }
   .logo {
@@ -219,7 +219,7 @@ body {
   .main__title {
     font: 600 50px/66px 'pt_serifbold', Arial, Helvetica, Sans-serif;
   }
- .main__subtitle {
+  .main__subtitle {
    font: 400 18px/21px "robotoregular", Arial, Helvetica, Sans-serif;
   }
 }
@@ -359,13 +359,13 @@ body {
     margin: 0;
     color: #333;
     font: 500 30px/35px "robotomedium", Arial, Helvetica, Sans-serif;
- }
+  }
   .menu__item:last-child {
     margin-left: 0;
     padding-left: 0;
     padding-right: 14px;
   }
-   .menu__item_blog {
+  .menu__item_blog {
      padding-right: 27px;
   }
   .menu__item_about {
@@ -393,12 +393,12 @@ body {
     visibility: visible;
     left: 0;
   }
-@keyframes radial-pulse {
-  0% {
-    box-shadow: 0 0 0 0px #C8DBFB;
+  @keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0px #C8DBFB;
+    }
+    100% {
+      box-shadow: 0 0 0 10px #C8DBFB;
+    }
   }
-  100% {
-    box-shadow: 0 0 0 10px #C8DBFB;
-  }
- }
 }
