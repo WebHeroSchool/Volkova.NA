@@ -265,7 +265,7 @@ body {
   }
 
   .main__subtitle {
-   font: 400 18px/21px "robotoregular", Arial, Helvetica, Sans-serif;
+    font: 400 18px/21px "robotoregular", Arial, Helvetica, Sans-serif;
   }
 
 }
@@ -486,7 +486,4 @@ body {
     100% {
       box-shadow: 0 0 0 10px #c8dbfb;
     }
-    
   }
-
-}
