@@ -404,11 +404,11 @@ body {
     margin-right: 6px;
   }
 
-  /*@keyframes radial-pulse {
+  /* @keyframes radial-pulse {
     100% {
       box-shadow: 0 0 0 10px #c8dbfb;
     }
-  }*/
+  } */
 
   #menu__toggle {
     opacity: 0;
@@ -510,4 +510,5 @@ body {
     visibility: visible;
     left: 0;
   }
+  
 }
