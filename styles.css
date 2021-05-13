@@ -146,7 +146,7 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 0 44px 0;
+  margin: 0 0 39px 0;
   padding: 0 30% 0 0;
   font: 400 22px/26px "robotoregular", Arial, Helvetica, Sans-serif;
   color: #000;
@@ -404,6 +404,12 @@ body {
     margin-right: 6px;
   }
 
+  @keyframes radial-pulse {
+    100% {
+      box-shadow: 0 0 0 10px #c8dbfb;
+    }
+  }
+
   #menu__toggle {
     opacity: 0;
   }
@@ -505,13 +511,4 @@ body {
     left: 0;
   }
 
-  @keyframes radial-pulse {
-    0% {
-      box-shadow: 0 0 0 0 #c8dbfb;
-    }
-
-    100% {
-      box-shadow: 0 0 0 10px #c8dbfb;
-    }
-  }
 }
