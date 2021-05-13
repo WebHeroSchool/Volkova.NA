@@ -177,7 +177,7 @@ body {
 }
 
 @media (max-width: 1524px) {
-  .main{
+  .main {
     background-size: 58%;
   }
 
@@ -229,7 +229,7 @@ body {
     margin-right: 3px;
   }
 
-  .main{
+  .main {
     padding-bottom: 80px;
     background-size: 55%;
     margin-right: 0;
@@ -404,11 +404,12 @@ body {
     margin-right: 6px;
   }
 
-  /* @keyframes radial-pulse {
+  @keyframes radial-pulse {
     100% {
       box-shadow: 0 0 0 10px #c8dbfb;
     }
-  } */
+
+  }
 
   #menu__toggle {
     opacity: 0;
